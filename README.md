@@ -58,13 +58,16 @@ to create a static optimized version for deployment.
 To deploy this project, you will need docker and docker-compose installed on your linux host machine. 
 
 Clone the repo to your host machine using ssh:
+
 ```
 git clone git@github.com:MediaByte/fullstack_demo.git
 ```
+
 If you do not have SSH setup in your github account, try cloning using HTTPS with this command:
+
 ```
 git clone https://github.com/MediaByte/fullstack_demo.git
-``
+```
 
 Assuming you are running linux, follow these instructions [to get started with Docker](https://docs.docker.com/install/linux/docker-ce/debian/)
 
