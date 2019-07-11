@@ -5,7 +5,9 @@
   "repository": "",
   "scripts": {
     "start": "nodemon built/server.js",
-    "build_server": "tsc --build"
+    "build_server": "npm install && npm install -g typescript && tsc --build",
+    "build_dashboard": "npm --prefix ../dashboard install ../dashboard && npm run build --prefix ../dashboard",
+    "first_time": "npm run build_server && npm run build_dashboard && npm start"
   },
   "keywords": [],
   "author": "Mario Martin",
