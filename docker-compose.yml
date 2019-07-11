@@ -1,0 +1,15 @@
+version: '3.6'
+services:
+  service:
+    container_name: Demo
+    build: ./
+    command: npm start
+    working_dir: /usr/src/demo/server
+    ports:
+     - 5000:5000 #Development
+    environment:
+      PORT: 5000
+      REACT_APP_API_LINK: "http://localhost:5000/api/users"
+      REACT_APP_FOOTER_LINK: "https://reqres.in/"
+
+  
